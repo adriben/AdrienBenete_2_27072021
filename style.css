@@ -38,15 +38,15 @@ header a {
 header a:hover{
     
   
-    color: blue;
+    color: #0065FC ;
     padding-top: 40px;
-    border-top: 1px solid blue;
+    border-top: 1px solid #0065FC;
 
 }
 
 #inscription{
     font-weight: bold;
-    color: blue;
+    color: #0065FC;
 }
 
 /*MAIN*/
