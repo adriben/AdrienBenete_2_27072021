@@ -1,0 +1,55 @@
+/* GENERAL */
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* HEADER */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    height: 60px;
+    margin: 20px 0 0 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+header li{
+    list-style: none;
+    padding: 30px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    opacity: 400;
+}
+
+header a:hover{
+    
+  
+    color: blue;
+    padding-top: 40px;
+    border-top: 1px solid blue;
+
+}
+
+#inscription{
+    font-weight: bold;
+    color: blue;
+}
+
+/*MAIN*/
+
+
+/*SECTION FILTRES*/
