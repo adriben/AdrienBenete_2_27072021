@@ -5,49 +5,56 @@ body{
 }
 
 /* HEADER */
+
+#containerHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-}
-
-header img {
-    height: 60px;
-    margin: 50px 0 0 53px;
-}
-
-ul{
-    display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-right: 74px;
-
+    margin: 5px 74px 0 0;
+    
 }
 
-header li{
-    list-style: none;
-    padding: 30px;
-
-}
-
-header a {
+nav a{
     text-decoration: none;
     color: black;
-    opacity: 400;
 }
 
-header a:hover{
-    
-  
-    color: #0065FC ;
-    padding-top: 45px;
-    border-top: 1px solid #0065FC;
+nav li a:hover{
 
+    border-top: 2px solid #0065FC;
+    padding-top: 52px;
+    color: #0065FC;
+    
+
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    margin-right: 65px;
+}
+header li{
+    padding: 55px;
+
+}
+header img{
+    height: 50px;
+    margin-left: 53px;
+    margin-top: 50px;
 }
 
 #inscription{
+    color: #0065FC ;
     font-weight: bold;
-    color: #0065FC;
 }
+
+
 
 /*MAIN*/
 
@@ -56,7 +63,7 @@ header a:hover{
 
 #sectionFiltres{
     display: inline-block;
-   margin: 50px 0 0 53px;
+   margin: 0 0 0 53px;
    position: relative;
 }
 
@@ -107,10 +114,40 @@ header a:hover{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 35px;
     justify-content: space-between;
   
     
+}
+
+#filtres a{ /*LIENS DES FILTRES*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 0px;
+    border: 3px solid #F2F2F2 ;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-left: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+
+}
+
+#filtres span{ /*Titres DES FILTRES*/
+
+   
+    padding: 13px;
+    margin-right: 15px;
+    font-weight: bold;
+    color: black;
+
+    
+
+
 }
 
 #filtres h3{
@@ -120,18 +157,54 @@ header a:hover{
 #filtres i{ /*icones des filtres*/
     display: flex;
     justify-content: space-around;
-    padding: 20px;
-   border: 1px solid rgba(0, 0, 0, 0.2);
-   padding: 10px;
-   border-radius: 40px;
    color: #0065FC ;
+   background-color: #DEEBFF ;
+   height: 50px;
+   width: 50px;
+   align-items: center;
+   border-radius: 25px;
+   padding-right: 0;
+   margin: -5px;
+   
+
+}
+ /*LEGENDE des filtres*/
+
+ #legende{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     margin-top: 30px;
+ }
+
+ #legende p{
+
+    padding-left: 20px;
+ }
+
+ #info {
+
+color: #0065FC ;
+border: 2px solid #DEEBFF;
+border-radius: 20px;
+padding: 10px;
+height: 10px;
+width: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+ }
+
+
+
+
+@media screen and (max-width: 620px){
+#containerHeader {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
 
 
 }
 
-#filtres p{ /*titres des filtres*/
-    margin-right: 10px;
-    border: solid 1px rgba(0, 0, 0, 0.2);
-    padding: 8px;
-    position: relative;
 }

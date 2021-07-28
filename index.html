@@ -15,25 +15,28 @@
 <body>
     <!--HEADER-->
  <header>
-   <nav>
-       <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
+   <div id="containerHeader">
+    <img src="images/logo/Reservia@3x.png" alt="logo Reservia">
+    <nav>
        <ul>
            <li><a href="#">Hébergements</a></li>
            <li><a href="#">Activités</a></li>
-           <li><a href="#"><span id="inscription">S'inscrire</span> </a></li>
        </ul>
-   </nav>
+       <a href="#" id="inscription"><span>S'inscrire</span> </a>
+    </nav>
+    
+  </div>
  </header>
 
  <main>
    <section id="sectionFiltres">
-     <div id="h1Filtres">    <!--H1 et description-->
-       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <div id="h1Filtres">    <!--H1 et description-->
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
-       <p>En plein centre ville ou en pleine nature</p>
-     </div>
+        <p>En plein centre ville ou en pleine nature</p>
+      </div>
 
-     <div id="searchBar"> <!--barre de recherche-->
+      <div id="searchBar"> <!--barre de recherche-->
         <i class="fas fa-map-marker-alt"></i>
         <input type="text" value="  Marseille, France" id="searchBox"> 
         <button id="searchBar">Rechercher</button>
@@ -41,29 +44,46 @@
 
      <div id="filtres"> <!--Filtres-->
        <h3>Filtres</h3>
-       <i class="fas fa-money-bill-wave"> </i> <p>Economique</p>
-       <i class="fas fa-child"></i><p>Familial</p>
-       <i class="fas fa-heart"></i><p>Romantique</p>
-       <i class="fas fa-dog"></i><p>Animaux autorisés</p>
-
-
-
+         <a href="#"><i class="fas fa-money-bill-wave"> </i> <span>Economique</span> </a>
+         <a href="#"><i class="fas fa-child"></i><span>Familial</span></a>
+         <a href="#"><i class="fas fa-heart"></i><span>Romantique</span></a>
+         <a href="#"><i class="fas fa-dog"></i> <span>Animaux autorisés</span></a>
 
      </div>
 
-     <div> <!--Legende-->
-      <i class="fas fa-info"></i>
-      <p>Plus de 500 logements sont disponibles dans cette ville</p>
-
-
-
+      <div id="legende"> <!--Legende-->
+       <i class="fas fa-info" id="info"></i>
+       <p>Plus de 500 logements sont disponibles dans cette ville</p>
      </div>
+   </section>
+
+   <section id="articleAside">
+
+     <article>
+      <h1>Hébergement à Marseille</h1>
+      
+
+
+
+     </article>
+
+
+     <aside>
+
+
+
+     </aside>
+
+
+
+
+
+
 
 
 
 
    </section>
-
 
 
 
