@@ -195,6 +195,73 @@ justify-content: space-around;
 align-items: center;
  }
 
+ /*HEBERGEMENTS*/
+
+ #articleAside{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  
+ }
+
+ #hebergementContainer{
+    background-color: #F2F2F2 ;
+ }
+ .hebergementMarseille img{
+     height: 120px;
+     width: 220px;
+     object-fit: cover;
+     
+ }
+
+ .hebergementMarseille{
+    display: flex;
+    flex-direction: column;
+    
+     text-align: center;
+
+ }
+
+ .hebergementMarseille a{
+
+    text-decoration: none;
+    color: black;
+    
+
+ }
+
+ .textImage{
+     margin-top: -15px;
+     border: 2px solid ;
+      margin-left: 15px;
+      margin-right: 15px;
+      height: 40%;
+      
+ }
+ .textImage h4,
+ .textImage p{
+     margin-top: 3px;
+ }
+
+ .articleImages{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+   
+
+ }
+ 
+ 
+
+ .hebergementMarseille a img{
+
+display: flex;
+justify-content: space-between;
+padding: 15px
+
+
+ }
 
 
 
