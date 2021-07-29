@@ -4,6 +4,10 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
+h4{
+    font-size: 120%;
+}
+
 /* HEADER */
 
 #containerHeader{
@@ -197,32 +201,66 @@ align-items: center;
 
  /*HEBERGEMENTS*/
 
- #articleAside{
+
+     /*HEBERGEMENTS  LEFT*/
+ #articleAside{    
   display: flex;
   justify-content: space-between;
   margin: 20px;
   
  }
 
- #hebergementContainer{
+ #hebergementContainer, aside{ /*DIV PRINCIPAL*/
     background-color: #F2F2F2 ;
- }
- .hebergementMarseille img{
-     height: 120px;
-     width: 220px;
-     object-fit: cover;
-     
- }
-
- .hebergementMarseille{
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     
-     text-align: center;
+ }
+
+ #hebergementContainer h1{
+     padding: 15px 0 0 25px;
+     margin-bottom: 1px;
 
  }
 
- .hebergementMarseille a{
+ #hebergementContainer h4{
+    margin-bottom: 0px;
+    padding: 5px 0 0px 25px;
+    font-weight: bold;
+
+ }
+
+
+ .articleImages{
+
+    display: flex;
+    justify-content: space-around;
+
+        
+   
+
+ }
+
+ .hebergementMarseille img{ /*IMAGES*/
+     height: 100px;
+     width: 220px;
+     object-fit: cover;
+     border: solid white 4px;
+     border-radius: 20px 20px 0 0;
+     
+ }
+
+ .hebergementMarseille{ /*UN ARTICLE*/
+    display: flex;
+    flex-direction: column;
+     text-align: center;
+     padding: 20px;
+
+
+ }
+
+ .hebergementMarseille a{  /*LIENS*/
 
     text-decoration: none;
     color: black;
@@ -230,39 +268,128 @@ align-items: center;
 
  }
 
- .textImage{
-     margin-top: -15px;
-     border: 2px solid ;
-      margin-left: 15px;
-      margin-right: 15px;
-      height: 40%;
+ 
+
+ 
+
+ .hebergementMarseille:hover{
+
+    transform: scale(1.1);
+    transition: transform .5s;
+    
+ }
+ 
+ .textImage{      /*Texte sous les images  HEBERGEMENT ET ASIDE*/ 
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 4px white solid;
+    margin-top: -4px;
+
+    padding-bottom: 4px;
+    width: 220px;
+    border-radius: 0 0 20px 20px;
+    font-size: 90%;
       
  }
+
  .textImage h4,
  .textImage p{
-     margin-top: 3px;
+     margin-top: 0;
+     margin-bottom: 0;
+     text-align: left;
+     padding-bottom: 7px;
+     padding-left: 5px;
+
  }
 
- .articleImages{
 
+
+ .rating{
+    display: flex;
+    font-size: 80%;
+    color:#0065FC ;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    
+    
+ }
+
+ .greyStar{
+
+color: #F2F2F2;
+font-weight: bold;
+ }
+ 
+ /*ASIDE*/
+
+ aside{
+     width: 31%;
+     margin-right: 75px;
+     display: flex;
+     flex-direction: column;
+     
+     
+ }
+
+#titreAside{
     display: flex;
     justify-content: space-around;
-    padding: 15px;
+    align-items: center;
+    padding: 15px 0 0 5px;
+    margin-bottom: 1px;
+    font-size: 120%;
+
+}
+
+.hebergementAside{
+
+padding-bottom: 25px;
+padding-left: 40px;
+}
+
+.hebergementAside img{
+   height: 130px;
+     width: 120px;
+     object-fit: cover;
+     border: solid white 4px;
+     border-radius: 20px 0 0 20px;
+
+}
+
+.hebergementAside a{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
    
+   
+}
 
- }
- 
- 
+aside .textImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 127px;
+    border-radius: 0 20px 20px 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
 
- .hebergementMarseille a img{
 
-display: flex;
-justify-content: space-between;
-padding: 15px
+}
 
+aside .textImage p{
+    margin-top: -20px;
+}
 
- }
+.hebergementAside:hover{
 
+    transform: scale(1.1);
+    transition: transform .5s;
+    
+}
 
 
 @media screen and (max-width: 620px){
