@@ -105,7 +105,7 @@ header img{
     
 }
 
-#searchBar button{ /*bouton rechercher*/
+#searchButton{ /*bouton rechercher*/
     color: white;
     background-color: #0065FC;
     height: 43px;
@@ -116,6 +116,7 @@ header img{
     border: rgba(0, 0, 0, 0.2);
     text-align: center;
     padding: 15px;
+    cursor: pointer;
 }
 
 #filtres{ /*div filtres eco famille romantique...*/
