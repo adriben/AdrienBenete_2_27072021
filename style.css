@@ -506,6 +506,44 @@ article h5{
     
 }
 
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    
+
+   
+}
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer article{
+  
+    margin-right: 160px;
+    margin-left: 10px;
+}
+
+footer h3{
+    padding-left: 40px;
+
+}
+
+footer li{
+    padding-bottom: 15px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
 
 
 
