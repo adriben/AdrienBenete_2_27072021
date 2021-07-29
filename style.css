@@ -172,6 +172,30 @@ header img{
    
 
 }
+
+#filtres i:hover{
+    transform: scale(1.3);
+    transition: transform .3s;
+    
+}
+
+#dogFiltre:hover{
+
+    color: black;
+}
+
+#heartFiltre:hover{
+    color: red;
+}
+
+#childFiltre:hover{
+
+    color: pink;
+}
+
+#billFiltre:hover{
+    color: green;
+}
  /*LEGENDE des filtres*/
 
  #legende{
