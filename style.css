@@ -359,7 +359,7 @@ font-weight: bold;}
 
 #titreAside{
     display: grid;
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 2fr 2fr ;
     align-items: center;
     margin-bottom: 30px;
     margin-left: 15px;
@@ -475,8 +475,8 @@ article h5{
 /*FOOTER*/
 
 footer{
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: #F2F2F2;
     
     
@@ -493,11 +493,7 @@ footer li{
     padding-bottom: 15px;
 }
 
-footer article{
-  
-    margin-right: 160px;
-    margin-left: 10px;
-}
+
 
 footer h3{
     padding-left: 40px;
@@ -510,7 +506,7 @@ footer a:hover{
 
 }
 
-@media screen and (max-width: 1240px){
+@media screen and (max-width: 1200px){
 
     .hebergementContainer{
         order: 2;
@@ -532,7 +528,9 @@ footer a:hover{
         grid-template-rows: 40px 1fr;
         
     }
-
+    #titreAside{
+        grid-column: span 2;
+    }
     
 
 
@@ -553,9 +551,65 @@ footer a:hover{
     }
 
 
-
+    
 
 
 
 }
 
+@media screen and (max-width: 800px){
+
+    aside{
+        grid-template-rows: 40px 1fr 1fr 1fr;
+       
+        
+    }
+
+    .soleilDuMatin{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column: span 3;
+    }
+ 
+     .auCoeurDeLeau{
+        
+         grid-row-start: 3;
+         grid-column-start: 1;
+         grid-column:  span 3;
+     }
+     
+     .hotelToutBleuBlanc{
+        
+         grid-row-start: 4;
+         grid-column-start: 1;
+         grid-column:  span 3;
+ 
+     }
+     #titreAside{
+        grid-column: span 3;
+    }
+
+    .articleImages{
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+
+    }
+
+    .articleImages img{
+        height: 180px;
+    }
+    
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+      
+    }
+    
+    #activitesMarseille img{
+        height: 200px;
+
+    }
+    
+     
+    }
