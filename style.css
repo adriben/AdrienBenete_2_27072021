@@ -92,10 +92,11 @@ nav li a:hover{
 }
 
 
-#searchBar i{ /*icone location*/
+
+.location{ /*icone location*/
         border: white solid 1px;
        
-        padding: 13px;
+        padding: 14px;
         background-color: #F2F2F2;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -103,7 +104,7 @@ nav li a:hover{
       }
 
       #searchBox{    /*barre de recherche Marseille*/
-        height: 39px ;
+        height: 43px ;
         font-weight: bold;
         color: black;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -125,7 +126,13 @@ nav li a:hover{
         cursor: pointer;
     }
 
-    
+    .glassIcon{
+        display: none;
+    }
+    .glassButton{
+        display: none;
+    }
+
     #filtres{ /*div filtres eco famille romantique...*/
         display: flex;
         flex-direction: row;
@@ -138,11 +145,11 @@ nav li a:hover{
     }
     
     #filtres a{ /*LIENS DES FILTRES*/
-        display: flex;
-        justify-content: space-between;
+        display: inline-flex;
+        flex-wrap: wrap;
         align-items: center;
         text-decoration: none;
-        margin-right: 20px;
+        margin-left: 20px;
         padding: 0px;
         border: 3px solid #F2F2F2 ;
         border-top-left-radius: 30px;
@@ -377,14 +384,14 @@ aside .textImage{
 
 .hebergementAside:hover{ /*HOVER SUR LES IMAGES*/
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform .5s;
     
 }
 
 .hebergementMarseille:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform .5s;
     
  }
@@ -457,7 +464,7 @@ aside .textImage{
 .petiteImage:hover,
 .grandeImage:hover{
 
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform .5s;
     
 }
@@ -466,6 +473,11 @@ aside .textImage{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 100%;
+}
+
+#fortDePromegues{
+    grid-row-start: 1;
+    grid-column-start: 2;
 }
 
 article h5{
@@ -508,7 +520,7 @@ footer a:hover{
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px){ /*SMALL SCREEN COMPUTER*/
 
     .hebergementContainer{
         order: 2;
@@ -519,16 +531,10 @@ footer a:hover{
         grid-row-gap: 30px;
        
     }
-    #activitesMarseille{
-        display: grid;
-        grid-template-columns: 1fr ;
-        
-      
-    }
+   
 
-    #longchamps{
-        grid-column-start: 1;
-        grid-row-start: 2;
+    .glassIcon {
+        display: none;
     }
     
 
@@ -569,14 +575,18 @@ footer a:hover{
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){  /*SMALL SCREEN Tablette*/
 
     aside{
         grid-template-rows: 40px 1fr 1fr 1fr;
        
         
     }
-
+    
+     
+    .glassIcon {
+        display: none;
+    }
     .soleilDuMatin{
         grid-row-start: 2;
         grid-column-start: 1;
@@ -614,14 +624,107 @@ footer a:hover{
         height: 180px;
     }
     
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
   
     
-    #activitesMarseille img{
-        height: 200px;
-
-    }
+   
     
      
     }
 
+
+    @media screen and (max-width: 600px)  { /*SMALL SCREEN Phone*/
     
+     #containerHeader{
+         grid-template-columns: 1fr 1fr ;
+         grid-template-rows: 2;
+
+     }
+
+     .nav{
+         grid-template-columns: 1fr 1fr ;
+         grid-row-start: 2;
+         grid-column-start: 1;
+         grid-column-end: span ;
+        
+     }
+     nav ul{
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     .inscription{
+        grid-row-start: 1;
+        
+     }
+
+        
+
+
+        .glassIcon{
+            display: inline;
+            position: absolute;
+            left: 256px;
+            background-color: #0065FC ;
+            border: none;
+            color: white;
+            cursor: pointer;
+            
+            
+        }
+
+        .glassButton{
+            display: inline;
+            position: absolute;
+            left: 243px;
+            height: 43px;
+            width: 43px;
+            background-color: #0065FC ;
+            border: none;
+            border-radius:10px;
+            cursor: pointer;
+        }
+
+        #searchButton{
+            display: none;
+        }
+
+        .articleImages{
+            grid-template-columns:  1fr;
+            grid-row-gap: 10px;
+            justify-content: center;
+            align-items: center;}
+
+            .hebergementContainer{
+
+                background-color: white;
+            }    
+
+            .hebergementMarseille{
+                box-shadow: 0px 0px 3px 3px #F2F2F2;
+                margin: 15px;
+                border-radius: 20px;
+            }
+
+            .hebergementMarseille img{
+                width: 100%;
+            }
+            
+            .hebergementMarseille .textImages{
+                width: 100%;
+            }
+
+            #activitesMarseille{
+                display: grid;
+                grid-template-columns: 1fr ;
+                
+              
+            }
+
+            #activitesMarseille img{
+                height: 200px;
+        
+            }
+    }
