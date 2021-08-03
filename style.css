@@ -16,13 +16,18 @@ nav a{
 header img{
     height: 50px;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 5px;
+    
   
 }
 
 #inscription{
     color: #0065FC ;
     font-weight: bold;
+    
+}
+#inscription:hover{
+    border: none;
 }
 
 nav li{
@@ -30,25 +35,16 @@ nav li{
     margin: 20px;
 }
 
-#containerHeader{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-  
-    
-}
 
-nav{
-    grid-column-start:  4;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    
-}
+
+
 
 nav ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
     padding-left: 0;
+    padding-top: 10px;
+    margin-top: 20px;
    
 
 }
@@ -128,6 +124,7 @@ nav li a:hover{
 
     .glassIcon{
         display: none;
+        color: white;
     }
     .glassButton{
         display: none;
@@ -638,30 +635,48 @@ footer a:hover{
 
     @media screen and (max-width: 600px)  { /*SMALL SCREEN Phone*/
     
-     #containerHeader{
-         grid-template-columns: 1fr 1fr ;
-         grid-template-rows: 2;
+       
+        .nav ul{ 
+            grid-template-columns: 1fr 1fr ;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+            grid-column-gap: 20%;
+            border-bottom: 3px solid #F2F2F2;
 
-     }
+        }
 
-     .nav{
-         grid-template-columns: 1fr 1fr ;
-         grid-row-start: 2;
-         grid-column-start: 1;
-         grid-column-end: span ;
+
+        .navHebergement{
+            grid-column-start: 1;
+           
+            padding-bottom: 20px;
+            
+           
+        }
         
-     }
-     nav ul{
-         grid-template-columns: 1fr 1fr 1fr;
-     }
+        .inscription{
+            grid-column-start: 2;
+            grid-row-start: 1;
+            
 
-     .inscription{
-        grid-row-start: 1;
+        }
+
+        .navActivity{
+            
+            padding-bottom: 20px;
+            
+        }
         
-     }
 
         
-
+        .navHebergement:hover{
+            border-top: none;
+            border-bottom: 2px solid #0065FC;
+            padding-bottom: 10px;
+            
+        }
+       
 
         .glassIcon{
             display: inline;
@@ -697,34 +712,43 @@ footer a:hover{
             justify-content: center;
             align-items: center;}
 
-            .hebergementContainer{
+        .hebergementContainer{
 
                 background-color: white;
             }    
 
-            .hebergementMarseille{
+        .hebergementMarseille{
                 box-shadow: 0px 0px 3px 3px #F2F2F2;
                 margin: 15px;
                 border-radius: 20px;
             }
 
-            .hebergementMarseille img{
+        .hebergementMarseille img{
                 width: 100%;
             }
             
-            .hebergementMarseille .textImages{
+        .hebergementMarseille .textImages{
                 width: 100%;
             }
 
-            #activitesMarseille{
+        #activitesMarseille{
                 display: grid;
                 grid-template-columns: 1fr ;
                 
               
             }
 
-            #activitesMarseille img{
+        #activitesMarseille img{
                 height: 200px;
         
             }
+
+        footer{
+        
+     display: grid;
+     grid-template-columns: 1fr;
+
+
+
+        }
     }
