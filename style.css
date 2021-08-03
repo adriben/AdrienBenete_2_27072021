@@ -524,7 +524,7 @@ footer a:hover{
     }
     #articleAside{
         grid-template-columns: 2fr;
-        grid-template-rows: 2;
+        
         grid-row-gap: 30px;
        
     }
