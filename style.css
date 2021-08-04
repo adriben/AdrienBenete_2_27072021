@@ -575,8 +575,15 @@ footer a:hover{
 
   /*SECTION HEBERGEMENTS*/
 
+  body{
+      margin: 0;
+  }
+
     aside{
         grid-template-rows: 40px 1fr 1fr 1fr;
+        border-radius: 0;
+        padding-left: 0;
+    
     }
     
     .soleilDuMatin{
@@ -631,6 +638,10 @@ footer a:hover{
     
          /*HEADER*/
        
+        
+
+    
+
         .navigation ul{ 
             grid-template-columns: 1fr 1fr ;
             justify-content: center;
@@ -775,7 +786,7 @@ footer a:hover{
 
         .hebergementMarseille{
              box-shadow: 0px 0px 3px 3px #F2F2F2;
-             margin: 15px;
+             margin: 0 1.8em 1em 1.2em;
              border-radius: 20px;
             }
 
