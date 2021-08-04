@@ -69,7 +69,7 @@ nav li a:hover{
 #searchButton{ /*Search button*/
     color: white;
     background-color: #0065FC;
-    height: 43px;
+    height: 55px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-left: none;
@@ -84,14 +84,16 @@ nav li a:hover{
 
 .location{               /*location icone*/
         border: white solid 1px;
-        padding: 14px;
+        padding: 20px;
         background-color: #F2F2F2;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
 }
 
 #searchBox{    /*search bar Marseille*/
-        height: 43px ;
+        height: 55px ;
+        width: 280px;
+        font-size: 110%;
         font-weight: bold;
         color: black;
         border: 1px solid rgba(0, 0, 0, 0.2);
@@ -710,7 +712,7 @@ footer a:hover{
         .glassIcon{
             display: inline;
             position: absolute;
-            left: 245px;
+            left: 365px;
             background-color: #0065FC ;
             border: none;
             color: white;
@@ -720,9 +722,9 @@ footer a:hover{
         .glassButton{
             display: inline;
             position: absolute;
-            left: 230px;
-            height: 43px;
-            width: 43px;
+            left: 345px;
+            height: 55px;
+            width: 55px;
             background-color: #0065FC ;
             border: none;
             border-radius:10px;
