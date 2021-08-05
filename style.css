@@ -17,6 +17,7 @@ header img{        /* Logo RESERVIA*/
     height: 50px;
     margin-left: 0;
     margin-top: 5px;
+   
     
 }
 
@@ -56,6 +57,10 @@ nav li a:hover{
 
 .inscription{
     padding-left: 2rem;
+}
+
+.logoReservia{
+    padding-left: 3%;
 }
 /*MAIN*/
 
@@ -520,7 +525,7 @@ footer a:hover{
     aside{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 40px 1fr;
+        grid-template-rows: 50px 1fr;
         
         
     }
@@ -720,7 +725,7 @@ footer a:hover{
             grid-column-start: 2;
             grid-row-start: 1;
             padding-left: 40%;
-            padding-top: 12%;
+            padding-top: 2rem;
            
         }
         
@@ -791,7 +796,11 @@ footer a:hover{
         }
 
 /*SECTION HEBERGEMENT*/
-
+        
+        #titreAside{
+        
+        grid-template-rows: 1fr 1fr 1fr;
+        }
 
         .articleImages{
             grid-template-columns:  1fr;
@@ -863,8 +872,7 @@ footer a:hover{
         }
 
         .inscription{ 
-            padding-left: 1.3rem;
-            padding-top: 1.6rem;
+            padding-top: 2rem;
             margin-right: 0;
         
         }
@@ -897,5 +905,13 @@ footer a:hover{
         .famille{
             grid-row-start: 2;
             grid-column-start: 1;
+        }
+
+        #titreAside{
+            grid-template-columns: 1fr;
+        }
+        #titreAside i{
+            grid-column-start: 2;
+            padding-right: 1rem;
         }
     }
