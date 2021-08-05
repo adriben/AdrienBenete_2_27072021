@@ -25,14 +25,16 @@ header img{        /* Logo RESERVIA*/
     font-weight: bold; 
 }
 
+
+
 #inscription:hover{
     border: none;
 }
 
 nav li{             /* Nav's Items*/
     list-style: none;
-    margin-top: 20px;
-    padding-left: 50px;
+    margin-top: 1.3rem;
+    padding-left: 4rem;
 
 }
 
@@ -52,6 +54,9 @@ nav li a:hover{
     padding-top: 44px;
 }
 
+.inscription{
+    padding-left: 2rem;
+}
 /*MAIN*/
 
 #filterBloc h1,p{     /* Main Title of the page and p*/
@@ -461,6 +466,12 @@ footer a:hover{
 @media screen and (max-width: 1200px){ /*SMALL SCREEN COMPUTER*/
 
 /*SECTION FILTRES*/
+
+   .inscription{
+       padding-right: 1rem;
+   }
+
+
     #filters{    
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 2fr;
@@ -532,7 +543,11 @@ footer a:hover{
         grid-row-start: 2;
     }
 
-
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+  
     
 
 
@@ -658,7 +673,7 @@ footer a:hover{
 
         .navActivity{
 
-            padding: 20px 0 20px 80px;
+            padding: 20px 0 20px 30%;
 
         }
 
@@ -669,8 +684,8 @@ footer a:hover{
         header ul li{      /*BORDER*/
             color: inherit;
             text-decoration: none;
-            font-size: 1.25rem;
-            padding: .87em 1.8em;
+            font-size: 1rem;
+            padding: .85em 1.8em;
             position: relative;
           }
           
@@ -722,7 +737,7 @@ footer a:hover{
         .glassIcon{
             display: inline;
             position: absolute;
-            left: 22.2em;
+            left: 16.1em;
             background-color: #0065FC ;
             border: none;
             color: white;
@@ -732,13 +747,17 @@ footer a:hover{
         .glassButton{
             display: inline;
             position: absolute;
-            left: 25.2em;
+            left: 18em;
             height: 55px;
-            width: 55px;
+            width: 4em;
             background-color: #0065FC ;
             border: none;
             border-radius:10px;
             cursor: pointer;
+        }
+
+        #searchBox{ 
+            width: 10em ;
         }
 
         #searchButton{
@@ -749,6 +768,7 @@ footer a:hover{
             display: grid;
             grid-template-columns: 2fr 2fr ;
             grid-template-rows: 1fr 1fr 1fr 1fr;
+            
         }
     
         .chien{
@@ -804,6 +824,16 @@ footer a:hover{
             margin-bottom: 2.3em;
         }
 
+        .hebergementAside:hover{ /*HOVER SUR LES IMAGES*/
+            transform: scale(1.02);
+            transition: transform .5s;
+        }
+        
+        .hebergementMarseille:hover{
+            transform: scale(1.02);
+            transition: transform .5s;
+         }
+
             /*SECTION ACTIVITIES*/
 
         #activitesMarseille{
@@ -822,4 +852,50 @@ footer a:hover{
              grid-template-columns: 1fr;
         }
 
+    }
+
+    @media screen and (max-width: 340px){
+
+        .navigation ul{
+            grid-column-gap: 0;
+            margin: 0;
+            
+        }
+
+        .inscription{ 
+            padding-left: 1.3rem;
+            padding-top: 1.6rem;
+            margin-right: 0;
+        
+        }
+
+         .navHebergement{ 
+             padding-left: 1rem;
+         }
+
+        #filters{
+            display: grid;
+            grid-template-columns: 2fr  ;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            
+        }
+    
+        .chien{
+            grid-row-start: 5;
+            grid-column-end: span 2;
+            margin: auto;
+        }
+    
+        .coeur{
+            grid-row-start: 4;
+        }
+    
+        .money{
+            grid-row-start: 3;
+        }
+    
+        .famille{
+            grid-row-start: 2;
+            grid-column-start: 1;
+        }
     }
