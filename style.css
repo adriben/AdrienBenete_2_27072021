@@ -595,6 +595,16 @@ footer a:hover{
 
   /*SECTION HEBERGEMENTS*/
 
+
+
+  .hebergementMarseille:hover{
+    transform: scale(1.01);
+    transition: transform .5s;
+ }
+
+ .hebergementMarseille{
+     margin-right: .1rem;
+ }
   body{
       margin: 0;
   }
@@ -838,10 +848,7 @@ footer a:hover{
             transition: transform .5s;
         }
         
-        .hebergementMarseille:hover{
-            transform: scale(1.02);
-            transition: transform .5s;
-         }
+        
 
             /*SECTION ACTIVITIES*/
 
