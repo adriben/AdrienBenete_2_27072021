@@ -63,7 +63,7 @@ nav li a:hover{
 }
 /*MAIN*/
 
-#filterBloc h1,p{     /* Main Title of the page and p*/
+.filterBloc h1,p{     /* Main Title of the page and p*/
     padding-left: 10px;
 
 }
