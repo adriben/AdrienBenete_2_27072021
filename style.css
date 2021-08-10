@@ -68,14 +68,14 @@ header nav li a:hover{
 
 }
 
-#searchBar{       /* Div containing the whole searchbar and button*/
+.searchBar{       /* Div containing the whole searchbar and button*/
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding-left: 1rem;
 }
 
-#searchButton{ /*Search button*/
+.searchButton{ /*Search button*/
     color: white;
     background-color: #0065FC;
     height: 3.5rem;
@@ -99,7 +99,7 @@ header nav li a:hover{
         border-bottom-left-radius: 15px;
 }
 
-#searchBox{    /*search bar Marseille*/
+.searchBox{    /*search bar Marseille*/
         height: 3.5rem ;
         width: 17rem;
         font-size: 110%;
@@ -179,19 +179,19 @@ header nav li a:hover{
         transition: transform .3s;       
 }
     
-#dogFiltre:hover{  
+#dogFilter:hover{  
         color: black;
 }
     
-#heartFiltre:hover{
+#heartFilter:hover{
         color: red;
 }
     
-#childFiltre:hover{
+#childFilter:hover{
         color: pink;
 }
 
-#billFiltre:hover{
+#billFilter:hover{
         color: green;
 }
 
@@ -492,12 +492,12 @@ footer a:hover{
         padding-left: 1.1rem;
 
     }
-    .chien{
+    .dog{
         grid-row-start: 2;
         margin: auto;
     }
 
-    .coeur{
+    .heart{
         grid-row-start: 2;
     }
 
@@ -505,7 +505,7 @@ footer a:hover{
         grid-row-start: 2;
     }
 
-    .famille{
+    .family{
         grid-row-start: 2;
     }
 
@@ -572,12 +572,12 @@ footer a:hover{
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
-    .chien{
+    .dog{
         grid-row-start: 4;
         margin: auto;
     }
 
-    .coeur{
+    .heart{
         grid-row-start: 3;
         margin: auto;
     }
@@ -587,7 +587,7 @@ footer a:hover{
         margin: auto;
     }
 
-    .famille{
+    .family{
         grid-row-start: 2;
         margin: auto;
     }
@@ -777,11 +777,11 @@ footer a:hover{
             cursor: pointer;
         }
 
-        #searchBox{ 
+        .searchBox{ 
             width: 10em ;
         }
 
-        #searchButton{
+        .searchButton{
             display: none;
         }
 
@@ -792,13 +792,13 @@ footer a:hover{
             
         }
     
-        .chien{
+        .dog{
             grid-row-start: 4;
             grid-column-end: span 2;
             margin: auto;
         }
     
-        .coeur{
+        .heart{
             grid-row-start: 3;
         }
     
@@ -806,7 +806,7 @@ footer a:hover{
             grid-row-start: 2;
         }
     
-        .famille{
+        .family{
             grid-row-start: 2;
             grid-column-start: 2;
         }
@@ -901,13 +901,13 @@ footer a:hover{
             
         }
     
-        .chien{
+        .dog{
             grid-row-start: 5;
             grid-column-end: span 2;
             margin: auto;
         }
     
-        .coeur{
+        .heart{
             grid-row-start: 4;
         }
     
@@ -915,7 +915,7 @@ footer a:hover{
             grid-row-start: 3;
         }
     
-        .famille{
+        .family{
             grid-row-start: 2;
             grid-column-start: 1;
         }
