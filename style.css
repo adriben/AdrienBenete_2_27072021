@@ -687,6 +687,7 @@ footer a:hover{
         .navHebergement{
             grid-column-start: 1;
             padding: 1.1rem 0 2rem 2rem;
+            color: #0065FC;
         }
 
         .navActivity{
