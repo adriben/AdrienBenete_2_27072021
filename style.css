@@ -97,11 +97,12 @@ header nav li a:hover{
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border-left: none;
-    width: 120px;
+    width: 150px;
     border: rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     cursor: pointer;
+    position: relative;
 }
 
 
@@ -116,7 +117,7 @@ header nav li a:hover{
 
 .searchBox{    /*search bar Marseille*/
         height: 3.5rem ;
-        width: 17rem;
+        width: 14rem;
         font-size: 110%;
         font-weight: bold;
         color: black;
@@ -126,15 +127,10 @@ header nav li a:hover{
 }
 
 
-.glassIcon{    /*Magnificient glass for responsive only*/
+.searchButton .glassIcon{    /*Magnificient glass for responsive only*/
         display: none;
-        color: white;
 }
 
-.glassButton{
-        display: none;
-        position: relative
-}
 
 .filters{        /*div filters: eco famille romantique...*/
       display: flex;
@@ -595,7 +591,7 @@ footer a:hover{
     .filters{
         display: grid;
         grid-template-columns: 2fr 2fr 2fr  2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
 
     .filterBloc{
@@ -603,7 +599,7 @@ footer a:hover{
     }
 
     .dog{
-        grid-row-start: 4;
+        grid-row-start: 3;
         grid-column: span 2;
         margin: auto;
     }
@@ -793,40 +789,39 @@ footer a:hover{
 
         .filterBloc{
             margin: 1.2rem;
+        
         }
 
-        .searchBar{
+        
+
+        .searchText{
+            display: none;
             position: relative;
         }
-
-        .glassIcon{
-            display: inline;
+        .searchButton .glassIcon{
+            display: block;
+            color: #fff;
             position: absolute;
-            left: 15.3em;
+            left: 1;
+            top: 20px;
             background-color: #0065FC ;
             border: none;
-            color: white;
-            cursor: pointer;   
+            cursor: pointer; 
+            font-size: 110%;  
         }
 
-        .glassButton{
-            display: inline;
-            position: absolute;
-            left: 17em;
-            height: 55px;
-            width: 4em;
-            background-color: #0065FC ;
-            border: none;
-            border-radius: 17px;
-            cursor: pointer;
-        }
+        
 
         .searchBox{ 
-            width: 10em ;
+            width: 12rem ;
         }
-
+         
+    
         .searchButton{
-            display: none;
+            color: #0065FC;
+            width: 3.5rem;
+            border-radius: 18px;
+            margin-left: -13px;
         }
 
         .filters{
