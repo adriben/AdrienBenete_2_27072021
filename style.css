@@ -941,7 +941,12 @@ footer a:hover{
              display: grid;
              grid-template-columns: 1fr;
         }
-
+        footer {
+            padding-top: 3rem;
+        }
+        footer h3{
+            margin-top: 0;
+        }
     }
 
     @media screen and (max-width: 350px){
