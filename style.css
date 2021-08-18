@@ -12,28 +12,25 @@ header, main{
     margin: 20px;
 }
 
-/* HEADER */
-
-header nav a{
+body a{
     text-decoration: none;
     color: black;
 }
 
+/* HEADER */
+
+
+
 header img{        /* Logo RESERVIA*/
     height: 50px;
     margin-left: 0;
-    margin-top: 5px;
-    
-   
-    
+    margin-top: 5px;  
 }
 
 #inscription{    /* S'inscrire button*/
     color: #0065FC ;
     font-weight: bold; 
 }
-
-
 
 #inscription:hover{
     border: none;
@@ -44,7 +41,6 @@ header nav li{             /* Nav's Items*/
     margin-top: 1.2rem;
     padding-left: 4rem;
 }
-
 
 header nav ul{               /* bloc with the 3 options*/
     display: grid;
@@ -72,15 +68,13 @@ header nav li a:hover{
 
        /* Main Title of the page and p*/
 .filterBloc h1{
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;  
 }
+
 .filterBloc p{
     margin-top: 10px;
     margin-bottom: 20px;
-    
 }
-
 
 .searchBar{       /* Div containing the whole searchbar and button*/
     display: flex;
@@ -91,7 +85,6 @@ header nav li a:hover{
 .searchButton{ /*Search button*/
     color: white;
     font-size: 105%;
-    font-weight: 550;
     background-color: #0065FC;
     height: 3.5rem;
     border-top-right-radius: 15px;
@@ -104,8 +97,6 @@ header nav li a:hover{
     cursor: pointer;
     position: relative;
 }
-
-
 
 .location{               /*location icone*/
         border: white solid 1px;
@@ -122,26 +113,22 @@ header nav li a:hover{
         font-weight: bold;
         color: black;
         border: 1px solid rgba(0, 0, 0, 0.2);
-        border-left: none;
-        
+        border-left: none;     
 }
-
 
 .searchButton .glassIcon{    /*Magnificient glass for responsive only*/
         display: none;
 }
 
-
 .filters{        /*div filters: eco famille romantique...*/
       display: flex;
        height: fit-content;
-       margin-top: 30px;
-        
+       margin-top: 30px;    
 }
     
 .filters a{                /*links of the filters*/
         display: inline-flex;
-       flex-wrap: nowrap;
+        flex-wrap: nowrap;
         align-items: center;
         text-decoration: none;
         margin-left: 15px;
@@ -157,7 +144,6 @@ header nav li a:hover{
 }
     
 .filters span{        /*Title of the filters, inside the border*/
-    
         padding: 13px;
         margin-right: 1px;
         font-weight: bold;
@@ -222,7 +208,6 @@ header nav li a:hover{
     margin: 0 5px 10px 0;
 }
 
-
 /*HEBERGEMENTS*/
 
 #articleAside{  
@@ -231,7 +216,6 @@ header nav li a:hover{
     grid-column-gap: 25px;
     width: 100%;
 }
-
 
 .hebergementMarseille img{    /*IMAGES of the HEBERGEMENT MARSEILLE section*/
     height: 100px;
@@ -248,22 +232,22 @@ header nav li a:hover{
       border: solid white 4px;
       border-radius: 20px 0 0 20px;
  }
- .hebergementContainer{  /*left container*/
+
+.hebergementContainer{  /*left container*/
      background-color: #F2F2F2 ;
      border-radius: 20px;
  }
 
- .hebergementContainer h2{ /*Title of the container*/
+.hebergementContainer h2{ /*Title of the container*/
      padding: 25px 0 10px 30px;
-  
  }
 
- #afficherPlus{ /*link at the button*/
+#afficherPlus{ /*link at the button*/
      text-decoration: none;
      color: black;
  }
 
- #afficherPlus h4{     
+#afficherPlus h4{     
     margin-left: 1.5rem;
     padding-top: 1rem;
     padding-bottom: .9rem;
@@ -272,11 +256,9 @@ header nav li a:hover{
 aside{                   /*Right container*/
     background-color: #F2F2F2;
     border-radius: 20px;
-    
  }
 
- .textImage{ /*Text under images*/
-
+.textImage{ /*Text under images*/
     background-color: white;
     border: 4px white solid;
     margin-top: -4px;
@@ -286,8 +268,7 @@ aside{                   /*Right container*/
     font-size: 90%;    
  }
 
- .articleImages{ /*IMAGES of the left part*/
-    
+ .articleImages{ /*IMAGES of the left part*/ 
      display: grid;
      grid-template-columns: 1fr 1fr 1fr ;
      margin-bottom: 20px;
@@ -296,7 +277,6 @@ aside{                   /*Right container*/
      align-items: center;
      margin-right: 0;
      justify-content: center;
-    
  }
 
  .hebergementMarseille{ /*arcticles of left container*/
@@ -305,7 +285,6 @@ aside{                   /*Right container*/
 
  .textpopulaire { /*text of the right part*/
      width: 100%;
-
  }
 
  .textImage h4,
@@ -327,7 +306,7 @@ aside{                   /*Right container*/
     color: black;
 }
 
- .rating{       /*rating*/
+.rating{       /*rating*/
     display: flex;
     font-size: 80%;
     color:#0065FC ;
@@ -336,8 +315,8 @@ aside{                   /*Right container*/
 }
     
 .greyStar{   /*grey star from rating*/
-color: #F2F2F2;
-font-weight: bold;
+    color: #F2F2F2;
+    font-weight: bold;
 }
 
 
@@ -367,9 +346,8 @@ font-weight: bold;
     grid-template-columns: 3fr 1fr ;
     align-items: center;
     margin: 20px 0 10px 15px;
-   
-    
 }
+
 #titreAside i{
     font-size: 1.4rem;
     padding-left: 4rem;
@@ -400,8 +378,6 @@ aside .textImage{
     margin: 10px;
 }
 
-
-
 #activites figure{ 
     margin: 25px;
     padding: 0;
@@ -409,14 +385,14 @@ aside .textImage{
     border-radius: 20px;   
  }
 
- .bigImage img{
+.bigImage img{
     height: 360px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
-   }
+}
 
-   .smallImage img{
+.smallImage img{
     height: 144px; 
     width: 100%;
     object-fit: cover;
@@ -427,7 +403,6 @@ aside .textImage{
     text-decoration: none;
     color: black; 
 }
-
 
 #fortDePromegues img{
     height: 170px;
@@ -468,11 +443,6 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #F2F2F2;
     width: 100%;
-}
-
-footer a{
-    text-decoration: none;
-    color: black;
 }
 
 footer li{
@@ -692,10 +662,6 @@ footer a:hover{
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-  
-    
-   
-    
      
     }
 
@@ -802,7 +768,6 @@ footer a:hover{
             display: block;
             color: #fff;
             position: absolute;
-            left: 1;
             top: 20px;
             background-color: #0065FC ;
             border: none;
