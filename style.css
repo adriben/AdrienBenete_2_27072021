@@ -2,7 +2,8 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1700px;
    
 }
 
@@ -44,7 +45,7 @@ header nav ul{               /* bloc with the 3 options*/
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
     padding-left: 0;
-    padding-top: 11px;
+    padding-top: 8px;
     margin-top: 1rem;
     margin-bottom: 50px;
 }
@@ -372,12 +373,8 @@ aside .textImage{
     padding-left: 30px; 
 }
 
- #activites{
-    margin: 10px;
-}
-
 #activites figure{ 
-    margin: 25px;
+    margin: 20px;
     padding: 0;
     box-shadow: 0px 0px 3px 3px #F2F2F2;
     border-radius: 20px;   
@@ -429,7 +426,7 @@ aside .textImage{
     grid-column-start: 2;
 }
 
-figure h5{
+#activites figure h5{
     margin: 0 2px 10px 5px;
     padding: 10px 0 15px 5px; 
 }
@@ -846,7 +843,11 @@ footer a:hover{
 
     #activitesMarseille{
         display: grid;
-        grid-template-columns: 1fr ; 
+        grid-template-columns: 1fr ;
+    }
+    #activitesMarseille figure{
+        margin: 1rem;
+
     }
 
     #activitesMarseille img{
