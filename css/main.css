@@ -57,9 +57,9 @@
 .filters{        /*div filters: eco famille romantique...*/
         
         display: grid;
-        grid-template-columns: 5% 15% 12% 15% 25%;
+        grid-template-columns: 5% 15% 12% 15% 20%;
         grid-template-rows: 1fr;
-        margin-top: .5rem;
+        margin-top: 1.5rem;
      
 }
     
