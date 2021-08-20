@@ -192,7 +192,7 @@
 
 }
 
-@media screen and (max-width: 650px)  { /*SMALL SCREEN Phone*/
+@media screen and (max-width: 600px)  { /*SMALL SCREEN Phone*/
     
          /*HEADER*/
     .navigation ul{ 
@@ -390,8 +390,8 @@
         grid-template-columns: 1fr ;
     }
     #activitesMarseille figure{
-        margin: 1rem;
-
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
     #activitesMarseille img{
