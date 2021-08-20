@@ -1,0 +1,45 @@
+/* HEADER */
+
+header img{        /* Logo RESERVIA*/
+    height: 50px;
+    margin-left: 0;
+    margin-top: 5px;  
+}
+
+#inscription{    /* S'inscrire button*/
+    color: #0065FC ;
+    font-weight: bold; 
+}
+
+#inscription:hover{
+    border: none;
+}
+
+header nav li{             /* Nav's Items*/
+    list-style: none;
+    margin-top: 1.2rem;
+    padding-left: 4rem;
+}
+
+header nav ul{               /* bloc with the 3 options*/
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    padding-left: 0;
+    padding-top: 8px;
+    margin-top: 1rem;
+    margin-bottom: 50px;
+}
+
+header nav li a:hover{
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
+    padding-top: 44px;
+}
+
+.inscription{
+    padding-left: 2rem;
+}
+
+.logoReservia{
+    padding-left: 0;
+}

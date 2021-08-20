@@ -1,0 +1,475 @@
+                                      /*MEDIA QUERIES*/
+
+@media screen and (max-width: 1200px){ /*SMALL SCREEN COMPUTER*/
+
+    /*SECTION FILTRES*/
+   .inscription{
+       padding-right: 1rem;
+   }
+
+    .filters{    
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        grid-template-rows: 1fr 1fr ;
+        margin-top: .5rem;
+    }
+    
+    .filters h3{
+        text-align: left;
+        padding-left: 1.1rem;
+    }
+
+    .dog{
+        grid-row-start: 2;
+        margin: auto;
+    }
+
+    .heart{
+        grid-row-start: 2;
+    }
+
+    .money{
+        grid-row-start: 2;
+    }
+
+    .family{
+        grid-row-start: 2;
+    }
+
+    .glassIcon {
+        display: none;
+    }
+
+         /*SECTION HEBERGEMENTS*/
+
+    .hebergementContainer{
+        order: 2;
+    }
+
+    #articleAside{
+        grid-template-columns: 2fr;
+        grid-row-gap: 30px;
+    }
+   
+    aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  
+        grid-template-rows: 50px 1fr;
+        
+    }
+    #titreAside{
+        grid-column: span 3;
+        margin: 0 0 1rem 1rem;
+    }
+    
+   .soleilDuMatin{
+       grid-row-start: 2;
+       grid-column-start: 1;
+   }
+
+    .auCoeurDeLeau{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    
+    .hotelToutBleuBlanc{
+        grid-column-start: 3;
+        grid-row-start: 2;
+    }
+
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){  /*SMALL SCREEN Tablette*/
+
+     /*SECTION FILTERS*/
+
+    body header{
+        margin-left: 10px;
+    }
+
+    .filters{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr  2fr;
+    }
+
+    .filterBloc{
+        margin: 10px;
+    }
+
+    .dog{
+        grid-row-start: 3;
+        grid-column: span 2;
+        margin: auto;
+    }
+
+    .heart{
+        grid-row-start: 2;
+        margin: auto;
+    }
+
+    .money{
+        grid-row-start: 2;
+        margin: auto;
+    }
+
+    .family{
+        grid-row-start: 2;
+        margin: auto;
+    }
+
+    .glassIcon {
+        display: none;
+    }
+
+  /*SECTION HEBERGEMENTS*/
+    .hebergementMarseille:hover{
+    transform: scale(1.01);
+    transition: transform .5s;
+    }
+
+    .hebergementMarseille{
+     margin-right: .1rem;
+    }
+    body{
+      margin: 0;
+    }
+
+    header, main{
+      margin: 0;
+    }
+
+    aside{
+        grid-template-rows: 65px 1fr 1fr 1fr;
+        border-radius: 0;
+        padding-left: 0;
+    }
+    
+    .soleilDuMatin{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column: span 3;
+    }
+ 
+     .auCoeurDeLeau{
+         grid-row-start: 3;
+         grid-column-start: 1;
+         grid-column:  span 3;
+    }
+     
+     .hotelToutBleuBlanc{
+         grid-row-start: 4;
+         grid-column-start: 1;
+         grid-column:  span 3;
+    }
+
+     #titreAside{
+        grid-column: span 3;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .articleImages{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .articleImages img{
+        height: 180px;
+    }
+
+     /*SECTION ACTIVITIES*/
+    
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 650px)  { /*SMALL SCREEN Phone*/
+    
+         /*HEADER*/
+    .navigation ul{ 
+        grid-template-columns: 1fr 1fr ;
+        justify-content: center;
+        grid-column-gap: 5%;
+        border-bottom: 3px solid #F2F2F2;
+        padding: 0 0 20px 0;
+        margin: 0;  
+    }
+
+    .navHebergement{
+        grid-column-start: 1;
+        padding: 0 0 0 1.5rem;
+        color: #0065FC;
+    }
+
+    .navActivity{
+        padding: 0 0 5px 30%;
+    }
+
+    ul img{
+        margin-left: .80rem;
+    }
+       
+    header ul li{      /*BORDER*/
+        color: inherit;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: .85em 1.8em;
+        position: relative;
+    }
+          
+    header li:after {
+        content: "";
+        position: absolute;
+        background: #0065fc;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -23px;
+        opacity: 0;
+    }
+          
+    header li:after {
+        opacity: 1;
+                           /*BORDER*/
+    }
+
+    .inscription::after {
+        opacity: 0;    
+    }
+
+    .logoReservia::after{
+        opacity: 0;         
+    }
+        
+    .navActivity::after{
+        opacity: 0;
+    }
+
+    .inscription{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        padding-left: 40%;
+        padding-top: 1.9rem;     
+    }
+        
+    .navHebergement:hover{
+        border-top: none;
+    }
+
+    .navActivity a:hover{
+        border-top: none;
+    }
+       
+        /*SECTION FILTERS*/
+    .filterBloc{
+        margin: 1.2rem;
+    }
+
+    .searchText{
+         display: none;
+            position: relative;
+    }
+
+    .searchButton .glassIcon{
+        display: block;
+        color: #fff;
+        position: absolute;
+        top: 20px;
+        background-color: #0065FC ;
+        border: none;
+        cursor: pointer; 
+        font-size: 110%;  
+        }
+
+    .searchBox{ 
+        width: 70% ;
+    }
+         
+    .searchButton{
+        color: #0065FC;
+        width: 3.5rem;
+        border-radius: 18px;
+        margin-left: -13px;
+    }
+
+    .filters{
+        display: grid;
+        grid-template-columns: 2fr 2fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+            
+    }
+    
+    .dog{
+        grid-row-start: 4;
+        grid-column-end: span 2;
+        margin: auto;
+    }
+    
+    .heart{
+        grid-row-start: 3;
+    }
+    
+    .money{
+        grid-row-start: 2;
+    }
+    
+    .family{
+        grid-row-start: 2;
+        grid-column-start: 2;
+    }
+        
+    #legende p {
+        margin: .4rem 0 0 .2rem;
+    }
+/*SECTION HEBERGEMENT*/
+        
+    #titreAside{
+        grid-template-rows: 2fr 1fr;
+    }
+
+    #titreAside i{
+        margin-right: 1.5rem;
+    }
+
+    .articleImages{
+        grid-template-columns:  1fr;
+        grid-row-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hebergementContainer{
+        background-color: white;
+    }  
+
+    .hebergementContainer h2{
+        margin: 0 0 .3rem 0;
+        padding-top: 0;
+
+    }
+
+    .hebergementMarseille{
+        box-shadow: 0px 0px 3px 3px #F2F2F2;
+        margin: 0 1.8em 1em 1.2em;
+        border-radius: 20px;
+    }
+
+    .hebergementMarseille img{
+        width: 100%;
+        height: 120px;
+    }
+        
+    #afficherPlus h4{
+        padding-top: 0;
+        margin-top: 0;
+        padding-left: 1rem;
+        margin-bottom: .3rem;
+    }
+
+    .hebergementAside:hover{ /*HOVER SUR LES IMAGES*/
+        transform: scale(1.02);
+        transition: transform .5s;
+    }
+            /*SECTION ACTIVITIES*/
+
+    #activites figure{
+        margin: 0 0 25px 0;
+    }
+
+    #activitesMarseille{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    #activitesMarseille figure{
+        margin: 1rem;
+
+    }
+
+    #activitesMarseille img{
+        height: 200px;
+    }
+
+    .bigImage{
+        margin-bottom: 0;
+    }
+
+    .smallImage:hover,
+    .bigImage:hover{
+        transform: scale(1.01);
+        transition: transform .5s;
+    }
+            /*FOOTER*/
+
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        padding: 3rem 0 1.5rem 0;
+        }
+
+    footer h3{
+        margin-top: 0;
+        }
+    }
+
+@media screen and (max-width: 350px){
+
+    .navigation ul{
+        grid-column-gap: 0;
+        margin: 0;       
+    }
+
+    .inscription{ 
+        padding-top: 2rem;
+        margin-right: 0;
+    }
+
+    .navHebergement{ 
+        padding-left: 1rem;
+    }
+
+    .filters{
+        display: grid;
+        grid-template-columns: 2fr  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    }
+    
+    .dog{
+        grid-row-start: 5;
+        grid-column-end: span 2;
+        margin: auto;
+    }
+    
+    .heart{
+        grid-row-start: 4;
+    }
+    
+    .money{
+        grid-row-start: 3;
+    }
+    
+    .family{
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    #titreAside{
+        grid-template-columns: 1fr;
+    }
+
+    #titreAside i{
+        grid-column-start: 2;
+        padding-right: 1rem;
+    }
+}

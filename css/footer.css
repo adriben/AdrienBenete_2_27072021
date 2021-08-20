@@ -1,0 +1,21 @@
+/*FOOTER*/
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+footer li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+footer h3{
+    padding-left: 40px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
