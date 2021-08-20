@@ -93,7 +93,7 @@
 
     .filters{
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr  2fr;
+        grid-template-columns: 2fr 2fr 2fr  2fr 1fr;
     }
 
     .filterBloc{
@@ -206,7 +206,7 @@
 
     .navHebergement{
         grid-column-start: 1;
-        padding: 0 0 0 1.5rem;
+        padding: 0 0 0 1.3rem;
         color: #0065FC;
     }
 
