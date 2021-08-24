@@ -87,9 +87,10 @@
 
      /*SECTION FILTERS*/
 
-    body header{
-        margin-left: 10px;
-    }
+     header nav li{             /* Nav's Items*/
+        list-style: none;
+        margin-top: 1.4rem;
+     }
 
     .filters{
         display: grid;
@@ -233,26 +234,23 @@
         height: 5px;
         left: 0;
         right: 0;
-        bottom: -23px;
+        bottom: -22px;
+        transition: .25s ease-in-out;
         opacity: 0;
-    }
-          
-    header li:after {
+        transform: scaleX(.5);
+      }
+      
+      header li:hover::after {
         opacity: 1;
-                           /*BORDER*/
-    }
-
-    .inscription::after {
+        transform: scaleX(1);   /*BORDER*/
+      }
+      .inscription:hover::after {
         opacity: 0;    
-    }
-
-    .logoReservia::after{
-        opacity: 0;         
-    }
+      }
+     .logoReservia:hover::after{
+        opacity: 0;  
         
-    .navActivity::after{
-        opacity: 0;
-    }
+     }
 
     .inscription{
         grid-column-start: 2;
